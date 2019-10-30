@@ -38,7 +38,7 @@ MAKEDEPEND=makedepend
 #MAKEDEPEND=../../MITgcm/tools/xmakedepend
 
 INCLUDEDIRS     = -I.				\
-		  -I../../MITgcm/verification/tutorial_global_oce_optim/build
+		  -I../../MITgcm_rpe/verification/tutorial_global_oce_optim/build
 
 LIBDIRS         = 
 LIBS            = 
@@ -58,7 +58,7 @@ CPPFLAGS = -DREAL_BYTE=4		\
 # compilation and the mitgcmuv compilation
 # default is gfortran
 FC              = gfortran
-FFLAGS          =  -fconvert=big-endian
+FFLAGS          =  -fconvert=big-endian -fimplicit-none -O2
 
 # ifort compilers
 #FC              = ifort

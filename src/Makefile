@@ -84,7 +84,7 @@ OBJECTS     = $(SRC:.F=.o)
 
 all: small_f $(EXECUTABLE)
 $(EXECUTABLE): $(OBJECTS)
-	$(FC) -o $@ $(FFLAGS) $(OBJECTS) $(LIBDIRS) $(LIBS)
+	$(FC) -static -o $@ $(FFLAGS) $(OBJECTS) $(LIBDIRS) $(LIBS)
 
 small_f: $(SMALLF)
 
